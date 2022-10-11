@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="17.5" viewBox="0 0 27 17.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0c3c3a;
+        stroke-width: 1.5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_menu_kopia_2" data-name="icon_menu kopia 2" class="cls-1" d="M1847,52.5h27m-27,8h27m-27-8h27m-27,16h27m-27-8h27" transform="translate(-1847 -51.75)"/>
+</svg>

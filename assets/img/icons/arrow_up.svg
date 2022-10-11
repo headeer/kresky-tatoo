@@ -1,0 +1,16 @@
+<svg id="zwiń" xmlns="http://www.w3.org/2000/svg" width="15.47" height="8.469" viewBox="0 0 15.47 8.469">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0c3c3a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="arrow_next" data-name="arrow next" class="cls-1" d="M1651,276l7-7" transform="translate(-1650.28 -268.281)"/>
+  <path id="arrow_before" data-name="arrow before" class="cls-1" d="M1665,276l-7-7" transform="translate(-1650.28 -268.281)"/>
+</svg>

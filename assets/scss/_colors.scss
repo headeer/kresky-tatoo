@@ -1,0 +1,43 @@
+$white: #fff;
+$main-color: #0c3c3a;
+$bg-section: #00ffea;
+$text-secondary: #2a4d3f;
+$text-secondary-light: rgba(42, 77, 63, 0.5);
+$button-blue: #16375c;
+$button-red: #661409;
+$button-green: #0c5e3c;
+$bullet-slider: #085e3c;
+$circle-blue: #004029;
+$footer: #053e28;
+$grey: #f2f2f2;
+$border: rgba(226, 242, 226, 0.5);
+$padding-default: 38px;
+:root {
+    --border: #0c3c3a;
+    --bg: white;
+    --bg-second: #f2f2f2;
+    --p-color: #0c3c3a;
+    --p-color-under: #0c3c3a;
+    --menu-color: #0c3c3a;
+    --bg-color: #fff;
+    --h1-color: #0c3c3a;
+    --switcher-light: #00ffea;
+    --switcher-dark: #0c3c3a;
+    --sun: #00ffea;
+    --moon: #fff;
+}
+
+[data-theme="dark"] {
+    --border: #00ffea;
+    --bg: black;
+    --bg-second: #00ffea;
+    --p-color: #00ffea;
+    --p-color-under: #0c3c3a;
+    --menu-color: white;
+    --bg-color: black;
+    --h1-color: #00ffea;
+    --switcher-light: #0c3c3a;
+    --switcher-dark: #00ffea;
+    --sun: white;
+    --moon: #00ffea;
+}

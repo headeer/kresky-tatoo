@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c3c3a;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="sygnet_logo" data-name="sygnet logo" class="cls-1" d="M83,83V38H38V83H83ZM44.777,46.833h7.188l7.316,7.377-3.594,3.624ZM63.041,74.166H57.959V63.916h5.083v10.25Zm2.272-16.333-3.594-3.623,7.316-7.377h7.188Z" transform="translate(-38 -38)"/>
+</svg>

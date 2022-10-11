@@ -1,0 +1,310 @@
+@import "colors";
+body {
+    height: 100vh;
+}
+.about_page header,
+.show-case header {
+    position: absolute;
+    top: 0;
+}
+header {
+    background: var(--bg);
+    position: relative;
+    z-index: 1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.5s;
+    .logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: flex-start;
+        :first-child {
+            margin: $padding-default;
+        }
+        h5 {
+            line-height: 1vw;
+            padding-left: 9px;
+            letter-spacing: 0.052vw;
+            font-size: 0.573vw;
+            color: var(--switcher-dark);
+            font-family: "Raleway", sans-serif;
+            text-transform: uppercase;
+            margin-top: -9px;
+            font-weight: 500;
+            opacity: 1;
+            z-index: 1;
+            transition: all 0.5s ease-in-out;
+        }
+        img {
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+        .logo-original,
+        .logo-scroll {
+            transition: all 0.5s ease-in-out;
+            .cls-1 {
+                transition: all 0.5s ease-in-out;
+                fill: #0c3c3a;
+                fill-rule: evenodd;
+            }
+        }
+        .logo-scroll {
+            position: absolute;
+            top: 47px;
+            left: 45px;
+            .cls-1 {
+                opacity: 0;
+                z-index: -1;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        .logo_light {
+            .cls-1 {
+                transition: all 0.5s ease-in-out;
+                fill: #0c3c3a;
+                fill-rule: evenodd;
+            }
+        }
+    }
+    .day-night-switcher {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .toggle_day {
+            cursor: pointer;
+            .cls-1,
+            .cls-2 {
+                fill: none;
+                stroke: var(--sun);
+
+                stroke-width: 2px;
+            }
+
+            .cls-2 {
+                fill-rule: evenodd;
+            }
+        }
+        .toggle_night {
+            &.activated {
+                path {
+                    stroke: var(--moon);
+                }
+            }
+            cursor: pointer;
+            .cls-1,
+            .cls-2 {
+                fill: none;
+                stroke: var(--moon);
+
+                stroke-width: 2px;
+            }
+
+            .cls-2 {
+                fill-rule: evenodd;
+            }
+        }
+        svg {
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+        img {
+            cursor: pointer;
+        }
+    }
+    .menu {
+        padding: $padding-default;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        .bar-top,
+        .bar-middle,
+        .bar-bottom {
+            height: 2px;
+            background: var(--switcher-dark);
+            border-radius: 5px;
+            margin: 6px 0;
+            width: 30px;
+            max-width: 30px;
+            margin-bottom: -1px;
+            transform-origin: left;
+            transition: all 0.5s;
+        }
+        .bar-top {
+            margin: 0;
+        }
+        .bar-middle {
+            margin: 6px 0 0;
+        }
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 7px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            list-style-type: none;
+            li {
+                opacity: 1;
+                transform: translateX(0);
+                transition: all 0.5s ease-in-out;
+
+                &:first-child {
+                    // animation: reverseHideMenuItem 0.5s ease-in;
+                }
+                &:nth-child(2) {
+                    // animation: reverseHideMenuItem 0.5s ease-in;
+                    transition-delay: 0.1s;
+                }
+                &:nth-child(3) {
+                    // animation: reverseHideMenuItem 0.5s ease-in;
+                    transition-delay: 0.2s;
+                }
+                &:nth-child(4) {
+                    // animation: reverseHideMenuItem 0.5s ease-in;
+                    transition-delay: 0.3s;
+                }
+                &:nth-child(5) {
+                    // animation: reverseHideMenuItem 0.5s ease-in;
+                    transition-delay: 0.4s;
+                }
+            }
+        }
+        .activated {
+            font-weight: 600;
+            letter-spacing: $letter-spacing-menu-bold;
+        }
+        a {
+            position: relative;
+            font-size: 0.8vw;
+            line-height: 1vw;
+            letter-spacing: $letter-spacing-menu-right;
+            color: var(--menu-color);
+        }
+        a:hover {
+            color: var(--menu-color);
+            text-decoration: none;
+        }
+
+        a:before,
+        a:after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            bottom: -4px;
+            background: var(--border);
+        }
+
+        a:before {
+            left: 0;
+        }
+        a:after {
+            right: 0;
+            background: var(--border);
+            transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        a:hover:before {
+            background: var(--border);
+            width: 100%;
+            transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        a:hover:after {
+            background: transparent;
+            width: 100%;
+            transition: 0s;
+        }
+        &.collapsed {
+            ul {
+                li {
+                    opacity: 0;
+                    transform: translateX(11px);
+                    transition: all 0.5s ease-in-out;
+                    cursor: none;
+                    pointer-events: none;
+                    &:first-child {
+                        // animation: hideMenuItem 0.5s ease-in;
+                    }
+                    &:nth-child(2) {
+                        // animation: hideMenuItem 0.5s ease-in;
+                        transition-delay: 0.1s;
+                    }
+                    &:nth-child(3) {
+                        // animation: hideMenuItem 0.5s ease-in;
+                        transition-delay: 0.2s;
+                    }
+                    &:nth-child(4) {
+                        // animation: hideMenuItem 0.5s ease-in;
+                        transition-delay: 0.3s;
+                    }
+                    &:nth-child(5) {
+                        // animation: hideMenuItem 0.5s ease-in;
+                        transition-delay: 0.4s;
+                    }
+                }
+            }
+            .bar-middle {
+                max-width: 19px;
+                transform: translateX(11px);
+            }
+        }
+    }
+    &.scroll-down {
+        position: fixed;
+        top: 0;
+        background: transparent;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 0.5s;
+
+        .logo {
+            img,
+            h5 {
+                opacity: 0;
+                z-index: -1;
+            }
+            .logo-scroll {
+                .cls-1 {
+                    opacity: 1;
+                    z-index: 1;
+                }
+            }
+            .logo-original,
+            .logo_light {
+                .cls-1 {
+                    opacity: 0;
+                    z-index: -1;
+                }
+            }
+        }
+        .day-night-switcher svg {
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+}
+
+// @keyframes hideMenuItem {
+//     0% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+//     100% {
+//         opacity: 0;
+//         transform: translateX(11px);
+//     }
+// }
+// @keyframes reverseHideMenuItem {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(11px);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }

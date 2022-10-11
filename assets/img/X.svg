@@ -1,0 +1,16 @@
+<svg id="X" xmlns="http://www.w3.org/2000/svg" width="15.47" height="15.469" viewBox="0 0 15.47 15.469">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0c3c3a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="arrow_next" data-name="arrow next" class="cls-1" d="M1753,776l7-7-7-7" transform="translate(-1752.28 -761.281)"/>
+  <path id="arrow_before" data-name="arrow before" class="cls-1" d="M1767,776l-7-7,7-7" transform="translate(-1752.28 -761.281)"/>
+</svg>

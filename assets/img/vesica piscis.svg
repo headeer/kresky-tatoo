@@ -1,0 +1,51 @@
+<svg id="vesica_piscis" data-name="vesica piscis" xmlns="http://www.w3.org/2000/svg" width="598.624" height="400.97" viewBox="0 0 598.624 400.97">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #00ffea;
+        stroke-linecap: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 0.001 3;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Elipsa_1" data-name="Elipsa 1" class="cls-1" cx="157.093" cy="200.175" r="155.625"/>
+  <circle id="Elipsa_1_kopia" data-name="Elipsa 1 kopia" class="cls-1" cx="373.577" cy="175.175" r="155.64"/>
+  <g id="Grupa_1" data-name="Grupa 1">
+    <path id="Kształt_1" data-name="Kształt 1" class="cls-2" d="M123.325,2481l194.016-151.63H420" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_1_kopia" data-name="Kształt 1 kopia" class="cls-2" d="M123.325,2481l194.016,151.64H420" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_2" data-name="Kształt 2" class="cls-2" d="M317.341,2330.31l104.542,151.64" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_3" data-name="Kształt 3" class="cls-2" d="M420.942,2281.34l-173.3,296.67H420" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_4" data-name="Kształt 4" class="cls-2" d="M317.341,2632.64l104.542-150.69" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_5" data-name="Kształt 5" class="cls-2" d="M420,2547.87L304.155,2481l116.787-66.87" transform="translate(-120.688 -2280.59)"/>
+  </g>
+  <g id="Grupa_1_kopia" data-name="Grupa 1 kopia">
+    <path id="Kształt_1-2" data-name="Kształt 1" class="cls-2" d="M718.558,2481L524.542,2329.37H421.883" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_1_kopia-2" data-name="Kształt 1 kopia" class="cls-2" d="M718.558,2481L524.542,2632.64H421.883" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_2-2" data-name="Kształt 2" class="cls-2" d="M524.542,2330.31L420,2481.95" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_3-2" data-name="Kształt 3" class="cls-2" d="M420.942,2281.34l173.295,296.67H421.883" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_4-2" data-name="Kształt 4" class="cls-2" d="M524.542,2632.64L420,2481.95" transform="translate(-120.688 -2280.59)"/>
+    <path id="Kształt_5-2" data-name="Kształt 5" class="cls-2" d="M421.883,2547.87L537.728,2481l-116.786-66.87" transform="translate(-120.688 -2280.59)"/>
+  </g>
+  <path id="Kształt_6" data-name="Kształt 6" class="cls-2" d="M420.942,2680.67V2281.34" transform="translate(-120.688 -2280.59)"/>
+  <path id="Kształt_7" data-name="Kształt 7" class="cls-2" d="M121.442,2481H717.616" transform="translate(-120.688 -2280.59)"/>
+  <circle id="Elipsa_1_kopia_2" data-name="Elipsa 1 kopia 2" class="cls-1" cx="299.312" cy="134.255" r="133.188"/>
+  <path id="Elipsa_1_kopia_3" data-name="Elipsa 1 kopia 3" class="cls-3" d="M420,2414.46a133.18,133.18,0,1,1-133.18,133.18A133.182,133.182,0,0,1,420,2414.46Z" transform="translate(-120.688 -2280.59)"/>
+  <g id="_3" data-name="3">
+    <circle id="Elipsa_2" data-name="Elipsa 2" class="cls-1" cx="300.25" cy="200.41" r="66.844"/>
+    <path id="Elipsa_1_kopia_4" data-name="Elipsa 1 kopia 4" class="cls-3" d="M420,2281.66a133.18,133.18,0,1,1-133.18,133.18A133.182,133.182,0,0,1,420,2281.66Zm0,132.8a133.18,133.18,0,1,1-133.18,133.18A133.182,133.182,0,0,1,420,2414.46Z" transform="translate(-120.688 -2280.59)"/>
+    <path id="Elipsa_3" data-name="Elipsa 3" class="cls-3" d="M419.471,2416.4a156.038,156.038,0,0,1,0,128.74A156.038,156.038,0,0,1,419.471,2416.4Z" transform="translate(-120.688 -2280.59)"/>
+  </g>
+</svg>

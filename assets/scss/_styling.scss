@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%; //1rem = 10px
+    // overflow-x: hidden;
+}
+
+body {
+    // @include font-size(30);
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--p-color);
+    font-family: "Raleway", sans-serif;
+}
+@mixin for-phone-only {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin for-above-phone {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+h1 {
+    @include rfs(5.5rem);
+}
+ul {
+    margin: 0 !important;
+}
+h2 {
+    @include rfs(4.5rem);
+}
+
+h3 {
+    @include rfs(3.5rem);
+    margin-bottom: 6rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+}
+
+a {
+    transition: $transition;
+    margin: 0;
+    text-decoration: none !important;
+}
+
+p {
+    letter-spacing: 0.02rem;
+    margin: 0;
+}

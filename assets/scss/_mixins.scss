@@ -1,0 +1,25 @@
+$desktop-asset-width: 1366px;
+$desktop-end: 1920px;
+$mobile-end: 1024px;
+
+@function fwget-vw($value) {
+    @return ($value / $desktop-asset-width) * 100vw;
+}
+
+@function mobile-get-vw($value) {
+    @return ($value / $mobile-asset-width) * 100vw;
+}
+@mixin fwParamSize($parameter, $size) {
+    #{$parameter}: fwget-vw($size);
+
+    @media screen and (min-width: $desktop-end) {
+        $scale: ($desktop-end / $desktop-asset-width);
+        #{$parameter}: floor($size * $scale);
+    }
+}
+
+@mixin mobileParamSize($parameter, $size) {
+    @media screen and (max-width: $mobile-end) {
+        #{$parameter}: mobile-get-vw($size);
+    }
+}

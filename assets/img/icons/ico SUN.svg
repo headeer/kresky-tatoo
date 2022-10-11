@@ -1,0 +1,24 @@
+<svg id="ico_SUN" data-name="ico SUN" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #00ffea;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Elipsa_2_kopia" data-name="Elipsa 2 kopia" class="cls-1" cx="14.047" cy="13.938" r="6.672"/>
+  <path id="Kształt_9" data-name="Kształt 9" class="cls-2" d="M937,47v7" transform="translate(-923 -47)"/>
+  <path id="Kształt_9_kopia" data-name="Kształt 9 kopia" class="cls-2" d="M937,68v7" transform="translate(-923 -47)"/>
+  <path id="Kształt_9_kopia_2" data-name="Kształt 9 kopia 2" class="cls-2" d="M951,61h-7" transform="translate(-923 -47)"/>
+  <path id="Kształt_9_kopia_2-2" data-name="Kształt 9 kopia 2" class="cls-2" d="M930,61h-7" transform="translate(-923 -47)"/>
+  <path id="Kształt_9_kopia_3" data-name="Kształt 9 kopia 3" class="cls-2" d="M946.192,51.808l-1.949,1.95" transform="translate(-923 -47)"/>
+  <path id="Kształt_9_kopia_3-2" data-name="Kształt 9 kopia 3" class="cls-2" d="M929.757,68.243l-1.949,1.95" transform="translate(-923 -47)"/>
+  <path id="Kształt_9_kopia_3-3" data-name="Kształt 9 kopia 3" class="cls-2" d="M946.192,70.192l-1.949-1.95" transform="translate(-923 -47)"/>
+  <path id="Kształt_9_kopia_3-4" data-name="Kształt 9 kopia 3" class="cls-2" d="M929.757,53.757l-1.949-1.95" transform="translate(-923 -47)"/>
+</svg>

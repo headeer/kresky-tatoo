@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.25" height="15.469" viewBox="0 0 8.25 15.469">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0c3c3a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Kształt_8" data-name="Kształt 8" class="cls-1" d="M1857,636l7-7-7-7" transform="translate(-1856.28 -621.281)"/>
+</svg>

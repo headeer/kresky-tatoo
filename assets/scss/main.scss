@@ -1,0 +1,463 @@
+// Compile "main.scss" as "css/main.css"
+
+/**
+ * Import Bootstrap sources
+ */
+
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Required: Configuration
+@import "../../node_modules/bootstrap/scss/functions";
+@import "colors";
+@import "fonts";
+@import "mixins";
+// Default variable overrides: https://getbootstrap.com/docs/5.0/customize/sass
+
+// Options
+$enable-caret: true;
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-reduced-motion: true;
+$enable-smooth-scroll: true;
+$enable-grid-classes: true;
+$enable-button-pointers: true;
+$enable-rfs: true;
+$enable-validation-icons: true;
+$enable-negative-margins: false;
+$enable-deprecation-messages: true;
+$enable-important-utilities: true;
+
+$spacer: 1rem;
+
+// Grayscale vars
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Color vars
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+$font-family-sans-serif: Lato, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+	"Liberation Sans", sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+$link-decoration: none;
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Optional: Uncomment all components that are not needed to reduce the filesize
+// Layout & components
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/offcanvas";
+// Helpers
+@import "../../node_modules/bootstrap/scss/helpers";
+// Utilities
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// Required Core Stylesheet
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+// Lightbox
+@import "../../node_modules/@midzer/tobii/src/scss/tobii";
+
+/**
+ * General
+ */
+
+img {
+	vertical-align: middle;
+}
+
+/**
+ * WordPress customization
+ */
+body {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+/* If WP-Adminbar is visible */
+body.admin-bar {
+}
+p,
+a,
+h5,
+h6,
+h4,
+span {
+	font-family: "Raleway", sans-serif;
+}
+/* WordPress Embeds */
+
+.post-thumbnail,
+.wp-video,
+.embed-responsive {
+	margin: 5px 0;
+	width: 100% !important;
+}
+
+.post,
+.post-thumbnail {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* Header */
+
+/* Main */
+
+#main {
+	// margin-top: $spacer;
+}
+
+/* Footer */
+
+#footer {
+	// background-color: #fff;
+
+	p {
+		margin-top: 10px;
+	}
+
+	.menu-item {
+		a {
+			&[aria-current="page"] {
+				color: $link-hover-color;
+			}
+		}
+	}
+}
+
+/* Sidebar */
+
+.widget-area {
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+}
+
+/* Posts */
+
+.sticky {
+	.card {
+		background-color: $gray-100;
+	}
+}
+
+.entry-meta {
+	font-size: small;
+	margin-top: $grid-gutter-width/2;
+}
+
+.single {
+	.entry-content,
+	.post-navigation,
+	#comments-title {
+		margin: $grid-gutter-width 0;
+	}
+}
+
+#comments {
+	margin-top: $grid-gutter-width;
+}
+
+.comment-meta {
+	height: 40px;
+}
+
+.comment-reply-title {
+	margin: $grid-gutter-width 0 $grid-gutter-width/2;
+}
+
+.commentlist {
+	list-style: none;
+	margin: 0 auto;
+	width: 68.9%;
+
+	> li.comment {
+		margin: 0 0 1.625em;
+		padding: 1.625em;
+		position: relative;
+	}
+
+	.children {
+		list-style: none;
+		margin-top: $grid-gutter-width;
+
+		> li.comment {
+			border-top: 1px solid $gray-300;
+			padding-top: $grid-gutter-width;
+			position: relative;
+		}
+	}
+
+	.avatar {
+		width: 64px;
+		height: 64px;
+		border-radius: 50%;
+		box-shadow: 0 1px 2px $gray-600;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		left: -102px;
+	}
+}
+
+/* WordPress Blocks */
+
+// Buttons
+
+.wp-block-button {
+	&.is-style-outline {
+		.wp-block-button__link {
+			@extend .btn;
+			@extend .btn-outline-primary;
+		}
+	}
+
+	&.btn-lg {
+		.wp-block-button__link {
+			@extend .btn-lg;
+		}
+	}
+	&.btn-sm {
+		.wp-block-button__link {
+			@extend .btn-sm;
+		}
+	}
+
+	.wp-block-button__link {
+		@extend .btn;
+		@extend .btn-primary;
+		text-decoration: none;
+	}
+}
+
+// Table
+
+.wp-block-table {
+	td,
+	th {
+		border: inherit;
+	}
+
+	table {
+		@extend .table;
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.bold {
+	font-weight: bold;
+}
+// Image, Media and Text
+
+.wp-block-image,
+.wp-block-media-text__media {
+	img,
+	video {
+		height: auto;
+	}
+}
+.page-template-home header {
+	background-color: transparent !important;
+}
+ul,
+li,
+a,
+div {
+	margin: 0;
+	padding: 0;
+}
+/**
+ * Responsive Design using "mixins/_breakpoints.scss"
+ */
+
+@media (max-width: breakpoint-max(sm)) {
+	#sidebar {
+		margin-top: 60px;
+	}
+}
+.btn-main {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 2px;
+	padding: 0 16px;
+	min-width: 64px;
+	height: 36px;
+	vertical-align: middle;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	background-color: $button-green;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	font-family: "Lato", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 36px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+	transition: box-shadow 0.2s;
+}
+
+.btn-main::-moz-focus-inner {
+	border: none;
+}
+
+/* Overlay */
+.btn-main::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(255, 255, 255);
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+/* Ripple */
+.btn-main::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 50%;
+	padding: 50%;
+	width: 32px; /* Safari */
+	height: 32px; /* Safari */
+	background-color: rgb(255, 255, 255);
+	opacity: 0;
+	transform: translate(-50%, -50%) scale(1);
+	transition: opacity 1s, transform 0.5s;
+}
+.btn-main:hover {
+	color: $gray-100;
+}
+/* Hover, Focus */
+.btn-main:hover,
+.btn-main:focus {
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn-main:hover::before {
+	opacity: 0.08;
+}
+
+.btn-main:focus::before {
+	opacity: 0.24;
+}
+
+.btn-main:hover:focus::before {
+	opacity: 0.3;
+}
+
+/* Active */
+.btn-main:active {
+	box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+		0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-main:active::after {
+	opacity: 0.32;
+	transform: translate(-50%, -50%) scale(0);
+	transition: transform 0s;
+}
+
+/* Disabled */
+.btn-main:disabled {
+	color: rgba(0, 0, 0, 0.38);
+	background-color: rgba(0, 0, 0, 0.12);
+	box-shadow: none;
+	cursor: initial;
+}
+
+.btn-main:disabled::before {
+	opacity: 0;
+}
+
+.btn-main:disabled::after {
+	opacity: 0;
+}
+.btn-main {
+	background: $main-color;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.underline {
+	text-decoration: underline;
+}
+@import "styling";
+@import "header";
+@import "home";
+@import "footer";
+@import "getintouch";
+@import "spot";
+@import "show";
+@import "about";

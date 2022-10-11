@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.719" height="25.031" viewBox="0 0 24.719 25.031">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0c3c3a;
+        stroke-width: 1.5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="MOON" class="cls-1" d="M983.745,49.147a11.77,11.77,0,1,1-11.786,11.77A11.778,11.778,0,0,1,983.745,49.147Zm6.375,0.9a8.729,8.729,0,1,1-8.714,8.729A8.721,8.721,0,0,1,990.12,50.042Z" transform="translate(-971.219 -48.406)"/>
+</svg>

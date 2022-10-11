@@ -1,0 +1,79 @@
+footer {
+    background: var(--bg-second);
+    .copy {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: $padding-default;
+        h5 {
+            font-size: $font-medium;
+            letter-spacing: $letter-spacing-font-medium;
+            font-weight: 400;
+        }
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        padding-right: $padding-default;
+        a {
+            font-weight: 600;
+            letter-spacing: $letter-spacing-font-medium;
+            font-size: $font-medium;
+        }
+    }
+    .lang {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        a {
+            letter-spacing: $letter-spacing-menu;
+            font-size: 0.8vw;
+        }
+
+        .activated {
+            font-weight: 600;
+        }
+    }
+    a {
+        position: relative;
+        color: $main-color;
+    }
+    a:hover {
+        color: $main-color;
+        text-decoration: none;
+    }
+
+    a:before,
+    a:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        bottom: -4px;
+        background: $main-color;
+    }
+
+    a:before {
+        left: 0;
+    }
+    a:after {
+        right: 0;
+        background: $main-color;
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    a:hover:before {
+        background: $main-color;
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    a:hover:after {
+        background: transparent;
+        width: 100%;
+        transition: 0s;
+    }
+}
