@@ -1,14 +1,23 @@
 footer {
     background: var(--bg-second);
+    @media screen and (max-width: 760px) {
+        z-index: 2;
+    }
     .copy {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         padding-left: $padding-default;
+        @media screen and (max-width: 760px) {
+            padding-left: $padding-default-mobile;
+        }
         h5 {
             font-size: $font-medium;
             letter-spacing: $letter-spacing-font-medium;
             font-weight: 400;
+            @media screen and (max-width: 760px) {
+                font-size: $font-medium-mobile;
+            }
         }
     }
     .social {
@@ -17,10 +26,16 @@ footer {
         justify-content: flex-end;
         gap: 20px;
         padding-right: $padding-default;
+        @media screen and (max-width: 760px) {
+            padding-right: $padding-default-mobile;
+        }
         a {
             font-weight: 600;
             letter-spacing: $letter-spacing-font-medium;
             font-size: $font-medium;
+            @media screen and (max-width: 760px) {
+                font-size: $font-medium-mobile;
+            }
         }
     }
     .lang {
@@ -31,6 +46,9 @@ footer {
         a {
             letter-spacing: $letter-spacing-menu;
             font-size: 0.8vw;
+            @media screen and (max-width: 760px) {
+                font-size: $font-medium-mobile;
+            }
         }
 
         .activated {
@@ -40,6 +58,9 @@ footer {
     a {
         position: relative;
         color: $main-color;
+        @media screen and (max-width: 760px) {
+            font-size: $font-medium-mobile;
+        }
     }
     a:hover {
         color: $main-color;

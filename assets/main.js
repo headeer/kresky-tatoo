@@ -58,7 +58,9 @@
 	// }
 	const loader = document.querySelector('.loader-container');
 	setTimeout(() => {
-		loader.classList.add('dissapear');
+		if (loader) {
+			loader.classList.add('dissapear');
+		}
 	}, 5000);
 
 	const text = document.querySelector('.text-animated');
@@ -84,23 +86,36 @@
 		el2[i].style.transform = 'rotate(' + i * 11.5 + 'deg)';
 	}
 	const text_loader = document.querySelector('.loader_text');
-	text_loader.innerHTML = text_loader.textContent.replace(/\S/g, "<span>$&</span>");
+	if (text_loader) {
+		text_loader.innerHTML = text_loader.textContent.replace(/\S/g, "<span>$&</span>");
+	}
 	const text_loader_1 = document.querySelectorAll('.loader_text span');
-	for (let i = 0; i < text_loader_1.length; i++) {
-		if (text_loader_1[i].innerHTML === 'z') {
-			text_loader_1[i].innerHTML = ' ';
+	if (text_loader_1) {
+
+		for (let i = 0; i < text_loader_1.length; i++) {
+			if (text_loader_1[i].innerHTML === 'z') {
+				text_loader_1[i].innerHTML = ' ';
+			}
+			text_loader_1[i].style.transform = 'rotate(' + (i * 11.5) + 'deg)';
 		}
-		text_loader_1[i].style.transform = 'rotate(' + (i * 11.5) + 'deg)';
 	}
+
 	const text_loader2 = document.querySelector('.loader_text-2');
-	text_loader2.innerHTML = text_loader2.textContent.replace(/\S/g, "<span>$&</span>");
-	const text_loader_2 = document.querySelectorAll('.loader_text-2 span');
-	for (let i = 0; i < text_loader_2.length; i++) {
-		if (text_loader_2[i].innerHTML === 'z') {
-			text_loader_2[i].innerHTML = ' ';
-		}
-		text_loader_2[i].style.transform = 'rotate(' + i * 11.5 + 'deg)';
+	if (text_loader2) {
+
+		text_loader2.innerHTML = text_loader2.textContent.replace(/\S/g, "<span>$&</span>");
 	}
+
+	const text_loader_2 = document.querySelectorAll('.loader_text-2 span');
+	if (text_loader_2) {
+		for (let i = 0; i < text_loader_2.length; i++) {
+			if (text_loader_2[i].innerHTML === 'z') {
+				text_loader_2[i].innerHTML = ' ';
+			}
+			text_loader_2[i].style.transform = 'rotate(' + i * 11.5 + 'deg)';
+		}
+	}
+
 	// bind filter button click
 	// var filtersElem = document.querySelector('.filters-button-group');
 	// filtersElem?.addEventListener('click', function (event) {
